@@ -17,5 +17,4 @@ COPY html .
 
 EXPOSE 80
 
-cmd ["apache2ctl", "-D", "FOREGROUND"]
-
+CMD ["apache2ctl", "-D", "FOREGROUND"]
