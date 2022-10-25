@@ -1,8 +1,9 @@
-version: '3'
-
+version: '3.9'
 services:
-  app:
-    build: .
+  webapp:
+    build:
+      context: ../
+      dockerfile: nginx.Dockerfile
     ports:
       - 3001:3001
     environment:
