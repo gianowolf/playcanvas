@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu
 
 ENV CONTAINER_TIMEZONE="America/Sao_Paulo"
 ENV APACHE_RUN_USER www-data

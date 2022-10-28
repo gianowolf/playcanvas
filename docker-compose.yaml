@@ -1,29 +1,25 @@
 version: '3.9'
 services:
-
-  # ubuntu:
-  #   container_name: httpd_ubuntu
-  #   build:
-  #     context: .
-  #     dockerfile: dockerfiles/ubuntu.Dockerfile
-  #   ports:
-  #     - "8001:80"
-
-  # httpd:
-  #   container_name: httpd
-  #   build:
-  #     context: .
-  #     dockerfile: dockerfiles/httpd.Dockerfile
-  #   ports:
-  #     - "8002:80"
-
-  # nginx:
-  #   build:
-  #     context: .
-  #     dockerfile: dockerfiles/nginx.Dockerfile
-  #   ports:
-  #     - "8003:80"
-
+  ubuntu:
+    container_name: httpd_ubuntu
+    build:
+      context: .
+      dockerfile: dockerfiles/ubuntu.Dockerfile
+    ports:
+      - "8001:80"
+  httpd:
+    container_name: httpd
+    build:
+      context: .
+      dockerfile: dockerfiles/httpd.Dockerfile
+    ports:
+      - "8002:80"
+  nginx:
+    build:
+      context: .
+      dockerfile: dockerfiles/nginx.Dockerfile
+    ports:
+      - "8003:80"
   node:
     build:
       context: .

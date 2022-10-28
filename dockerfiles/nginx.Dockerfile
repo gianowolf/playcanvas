@@ -1,4 +1,4 @@
-FROM nginx:stable
+FROM nginx
 
 COPY html /var/www
 

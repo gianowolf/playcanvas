@@ -1,4 +1,4 @@
-FROM httpd:latest 
+FROM httpd:latest
 
 ENV CONTAINER_TIMEZONE="America/Sao_Paulo"
 
@@ -8,4 +8,4 @@ WORKDIR /usr/local/apache2/htdocs/
 
 COPY html /usr/local/apache2/htdocs/
 
-RUN 'httpd -D FOREGROUND'
+# RUN 'httpd -D FOREGROUND'
